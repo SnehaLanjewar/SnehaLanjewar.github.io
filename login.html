@@ -3,17 +3,13 @@
         <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
     </head>
     <body>
-        <form id='myForm' method='post'>
-            <input type='hidden' name='type' id='type'>
-            <input type='hidden' name='target' id='target'>
-        </form>
+        <form id='myForm'></form>
     </body>
 
 <script>
 $( document ).ready(function() {
 var lhForm =  $('#myForm');
-lhForm.append('<input type=hidden name=app value="container" />');
-var submitURL = 'https://care.lifecyclehealth.com/#/episode/dashboard'; 
+var submitURL = 'https://care.lifecyclehealth.com/'; 
 lhForm.attr('action', submitURL);
 lhForm.submit();
 });
