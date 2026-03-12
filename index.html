@@ -3,26 +3,214 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Onmen Implementation</title>
+  <title>Sneha Lanjewar – Portfolio</title>
   <style>
-    html, body {
+    body {
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      height: 100%;
+      color: #222;
+      background: #fff;
     }
-    .holds-the-iframe {
-      background: url(upload.gif) center center no-repeat;
-      height: 100%;
-      width: 100%;
+
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
     }
-    #customIframe {
-      border: none;
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 2em;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.1em;
+    }
+
+    nav {
+      background: #34495e;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 0.95em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 30px;
+    }
+
+    section:last-child {
+      border-bottom: none;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 12px;
+      color: #2c3e50;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+    }
+
+    .job, .project {
+      margin-bottom: 20px;
+    }
+
+    .job h3, .project h3 {
+      margin: 0 0 4px;
+      font-size: 1.1em;
+    }
+
+    .job .meta, .project .meta {
+      font-size: 0.9em;
+      color: #555;
+      margin-bottom: 6px;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: #aad4f5;
     }
   </style>
 </head>
 <body>
-  <div class="holds-the-iframe">
-    <iframe width="100%" height="100%" id="customIframe" src="login.html"></iframe>
-  </div>
+
+  <header>
+    <h1>Sneha Lanjewar</h1>
+    <p>Software Developer &amp; Tech Enthusiast</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#journey">Professional Journey</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+
+    <!-- About Me -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Sneha Lanjewar, a passionate software developer with a keen interest in building
+        clean, user-friendly applications. I enjoy solving complex problems and continuously
+        learning new technologies.
+      </p>
+      <p>
+        When I'm not coding, I enjoy reading, exploring new tools, and contributing to open-source
+        projects.
+      </p>
+    </section>
+
+    <!-- Professional Journey -->
+    <section id="journey">
+      <h2>Professional Journey</h2>
+
+      <div class="job">
+        <h3>Software Developer</h3>
+        <div class="meta">Company Name &mdash; Month Year &ndash; Present</div>
+        <ul>
+          <li>Describe a key responsibility or achievement here.</li>
+          <li>Another achievement or contribution.</li>
+          <li>Technologies used: JavaScript, Python, etc.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Junior Developer / Intern</h3>
+        <div class="meta">Company Name &mdash; Month Year &ndash; Month Year</div>
+        <ul>
+          <li>Describe a key responsibility or achievement here.</li>
+          <li>Another achievement or contribution.</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- Project Highlights -->
+    <section id="projects">
+      <h2>Project Highlights</h2>
+
+      <div class="project">
+        <h3>Project One</h3>
+        <div class="meta">Technologies: HTML, CSS, JavaScript</div>
+        <p>A brief description of what this project does and the problem it solves.</p>
+      </div>
+
+      <div class="project">
+        <h3>Project Two</h3>
+        <div class="meta">Technologies: Python, Django</div>
+        <p>A brief description of what this project does and the problem it solves.</p>
+      </div>
+
+      <div class="project">
+        <h3>Project Three</h3>
+        <div class="meta">Technologies: React, Node.js</div>
+        <p>A brief description of what this project does and the problem it solves.</p>
+      </div>
+
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> JavaScript, Python, Java, HTML, CSS</li>
+        <li><strong>Frameworks &amp; Libraries:</strong> React, Node.js, Django</li>
+        <li><strong>Tools:</strong> Git, GitHub, VS Code, Docker</li>
+        <li><strong>Other:</strong> Agile / Scrum, REST APIs, SQL</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul>
+        <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+        <li>GitHub: <a href="https://github.com/SnehaLanjewar" target="_blank" rel="noopener">github.com/SnehaLanjewar</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener">linkedin.com/in/your-profile</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sneha Lanjewar. Built with HTML &amp; CSS.</p>
+  </footer>
+
 </body>
 </html>
