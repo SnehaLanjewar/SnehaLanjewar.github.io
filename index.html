@@ -1,20 +1,28 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Onmen Implementation</title>
-</head>
-    <style>
-    .holds-the-iframe {
-    background:url(upload.gif) center center no-repeat;
-     
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
     }
-    
-    </style>
+    .holds-the-iframe {
+      background: url(upload.gif) center center no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+    #customIframe {
+      border: none;
+    }
+  </style>
+</head>
 <body>
- 
-<div class="holds-the-iframe">
-	 <iframe width="100%" height="100%" id="customIframe" src="login.html"/>
-</div>
+  <div class="holds-the-iframe">
+    <iframe width="100%" height="100%" id="customIframe" src="login.html"></iframe>
+  </div>
 </body>
 </html>
